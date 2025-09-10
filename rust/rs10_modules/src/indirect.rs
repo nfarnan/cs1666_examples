@@ -1,3 +1,3 @@
 pub fn hi() {
-	println!("Indirect says hi!");
+    println!("Indirect says hi!");
 }
