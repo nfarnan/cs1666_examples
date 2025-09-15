@@ -1,0 +1,19 @@
+[package]
+name = "bevy_demos"
+version = "0.1.0"
+authors = ["Nick Farnan <nlf4@pitt.edu>"]
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# Apply basic optimiations to our code in dev builds
+[profile.dev]
+opt-level = 1
+
+# Apply all optimiations to dependencies in dev builds
+[profile.dev.package."*"]
+opt-level = 3
+
+[dependencies]
+bevy = "0.16.1"
+rand = "0.9"
